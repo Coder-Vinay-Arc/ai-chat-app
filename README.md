@@ -1,17 +1,62 @@
 # AI Chat App
 
-Frontend Start:
+A full-stack AI chatbot built with React, Express.js, and Google Gemini AI.
+
+## Live Demo
+
+Frontend:
+https://ai-chat-app-psi-one.vercel.app
+
+Backend:
+https://ai-chat-app-7yn2.onrender.com
+
+## Features
+
+* Gemini AI Integration
+* Modern Chat UI
+* React + Vite Frontend
+* Express Backend
+* Deployed on Vercel and Render
+
+## Tech Stack
+
+Frontend:
+
+* React
+* Vite
+* CSS
+
+Backend:
+
+* Node.js
+* Express.js
+* Google Gemini API
+
+## Local Setup
+
+### Frontend
+
+```bash
+npm install
 npm run dev
+```
 
-Frontend URL:
-http://localhost:5173
+### Backend
 
-Backend Start:
+```bash
 cd backend
+npm install
 node server.js
+```
 
-Backend URL:
-http://localhost:5000
+## Environment Variables
 
-Gemini Model:
-gemini-2.5-flash
+Create a `.env` file inside the backend folder:
+
+```env
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+## Author
+
+Vinay Kumar Gupta
