@@ -25,7 +25,7 @@ function App() {
         })
       }
     }
-    
+
     // Timeout gives the DOM and Markdown renderer time to paint new elements
     const timer = setTimeout(scrollToBottom, 80)
     return () => clearTimeout(timer)
@@ -87,7 +87,7 @@ function App() {
     setTimeout(async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/chat",
+          "https://ai-chat-app-7yn2.onrender.com",
           {
             method: "POST",
             headers: {
@@ -120,7 +120,7 @@ function App() {
         const errorMessage = {
           id: Date.now() + 1,
           role: "assistant",
-          text: `Failed to load response from backend AI server. Make sure it is running on http://localhost:5000. (Error: ${error.message})`,
+          text: `Failed to connect to AI server. (Error: ${error.message})`,
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
           isError: true
         }
@@ -261,7 +261,7 @@ function App() {
                     <>
                       <div className="bot-avatar">Q</div>
                       <div className="bot-content-wrapper">
-                        <div 
+                        <div
                           className="bubble markdown-body"
                           dangerouslySetInnerHTML={{ __html: marked.parse(msg.text || "") }}
                         />
