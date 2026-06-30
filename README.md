@@ -14,7 +14,7 @@ https://ai-chat-app-7yn2.onrender.com
 
 * Gemini AI Integration
 * Modern Chat UI
-* React + Vite Frontend
+* React and Vite Frontend
 * Express Backend
 * Deployed on Vercel and Render
 
@@ -60,3 +60,4 @@ GEMINI_API_KEY=YOUR_API_KEY
 ## Author
 
 Vinay Kumar Gupta
+Priyanshu Gupta
